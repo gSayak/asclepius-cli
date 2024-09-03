@@ -20,7 +20,7 @@ Asclepius is an AI-powered emergency services assistant that helps users send me
 
 1. Clone the repository:
    ```
-   git clone https://github.com/yourusername/asclepius.git
+   git clone https://github.com/gSayak/asclepius-cli.git
    cd asclepius
    ```
 
