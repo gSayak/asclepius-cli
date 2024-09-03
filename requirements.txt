@@ -1,0 +1,7 @@
+gradio
+python-dotenv
+openai
+langchain
+pinecone-client
+pymongo
+python-dotenv
