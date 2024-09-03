@@ -49,7 +49,7 @@ Interact with the AI by responding to its prompts. You can:
 - Send a message to Dr. Adrin
 - Describe an emergency situation
 - Provide your location for assistance
-- Exit the conversation
+- To Exit the conversation. Use commands `bye, goodbye, exit or quit`
 
 ## Project Structure
 
