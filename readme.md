@@ -35,11 +35,18 @@ Asclepius is an AI-powered emergency services assistant that helps users send me
    OPEN_AI_KEY=your_openai_api_key
    PINECONE_DB=your_pinecone_api_key
    MONGO_DB_URI=your_mongodb_uri
+   MONGO_DB_NAME=your_mongodb_database_name
    ```
 
 ## Usage
 
-Run the AI receptionist:
+1. Set Up the project using
+
+```
+python setup.py
+```
+
+2. Run the AI receptionist:
 
 ```
 python main.py --start
