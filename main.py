@@ -83,17 +83,22 @@ class AiReceptionist:
 
             if tool.function.name == "store_user_message":
                 # store the message in the database
-                tool_query_string = json.loads(tool.function.arguments)['message']
+                message = json.loads(tool.function.arguments)['message']
+                self.store_user_message(message)
                 self.messages.append(
                     {
                         "role": "tool",
                         "tool_call_id": tool.id,
                         "name": tool.function.name,
-                        "content": f"Success 400. Message: {tool_query_string} has been sent to Dr. Adrin",
+                        "content": f"Success 400. Message: {message} has been sent to Dr. Adrin",
                     }
                 )
         response = self.make_openai_call()
         return response.choices[0].message.content
+    
+    def store_user_message(self, message: str):
+        messages.insert_one({"message": message})
+
     
     def get_eta_on_location(self, location: str):
         # print("LOCATION FUNCTION CALLED")

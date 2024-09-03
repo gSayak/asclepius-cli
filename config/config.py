@@ -6,4 +6,6 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv("OPEN_AI_KEY")
 PINECONE_DB_KEY = os.getenv("PINECONE_DB")
 MONGO_DB_URI = os.getenv("MONGO_DB_URI")
+MONGO_DB_NAME = os.getenv("MONGO_DB_NAME")
+
 
